@@ -10,6 +10,9 @@ build.ninja
 .ninja_deps
 .ninja_log
 Makefile
+!cmake-build-debug/flight_data.bin
+!cmake-build-debug/Statistics
+
 
 *.exe
 *.a
@@ -19,6 +22,8 @@ Makefile
 *.dll
 *.so
 *.dylib
+*.bin
+*.txt
 
 Testing/
 
