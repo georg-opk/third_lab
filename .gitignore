@@ -1,0 +1,32 @@
+# IDE & настройки проекта
+.idea/
+*.iml
+
+# CMake & сборка
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+build.ninja
+.ninja_deps
+.ninja_log
+Makefile
+
+# Компилированные файлы и бинарники
+*.exe
+*.a
+*.lib
+*.o
+*.obj
+*.dll
+*.so
+*.dylib
+
+# Локальные данные (если не нужно хранить в репозитории)
+*.bin
+Statistics/
+Testing/
+
+# ОС
+.DS_Store
+Thumbs.db
