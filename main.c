@@ -11,6 +11,7 @@ int main(int argc, char *argv[]) {
         flight2 = appendTree(flight2, current->timestamp_ms, current->lon_rad, current->lat_rad, current->alt_m);
         current = current->next;
     }
+
     printStatistics(flight1, flight2);
 
     writeStatistics("stat.txt", flight1, flight2);
