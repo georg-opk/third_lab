@@ -66,7 +66,6 @@ uint32_t durationFlight(Node *head) {
     }
 
     return duration;
-
 }
 
 
