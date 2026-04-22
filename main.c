@@ -17,5 +17,4 @@ int main(int argc, char *argv[]) {
 
     free(flight1);
     return 0;
-    //123
 }
