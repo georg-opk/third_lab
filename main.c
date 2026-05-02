@@ -4,11 +4,11 @@
 int main(int argc, char *argv[]) {
     Node *flight1 = NULL;
     TreeNode *flight2 = NULL;
-    read_file(argv[1], &flight1);
-    //read_file("flight_data14.bin", &flight1);
+    //read_file(argv[1], &flight1);
+    read_file("flight_data14.bin", &flight1);
     Node *current = flight1;
     while (current != NULL) {
-        flight2 = appendTree(flight2, current->timestamp_ms, current->lon_rad, current->lat_rad, current->alt_m);
+        flight2 = appendTree(flight2, current->timestamp_ms, current->lat_rad, current->lon_rad, current->alt_m);
         current = current->next;
     }
 
