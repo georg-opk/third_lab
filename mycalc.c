@@ -58,16 +58,17 @@ int countPoints(Node *head) {
 }
 
 uint32_t durationFlight(Node *head) {
-    uint32_t duration = 0;
+    uint32_t first = head->timestamp_ms;
+    uint32_t last = first;
+
     Node *current = head;
     while (current != NULL) {
-        duration += current->timestamp_ms;
+        last = current->timestamp_ms;
         current = current->next;
     }
 
-    return duration;
+    return last - first;
 }
-
 
 TreeNode *createNodeTree(uint32_t timestamp_ms, float lat_rad, float lon_rad, float alt_m) {
     TreeNode *newNode = (TreeNode *) malloc(sizeof(TreeNode));
